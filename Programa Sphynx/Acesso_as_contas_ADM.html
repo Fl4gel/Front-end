@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfil do usuário-ADM</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <div id="Logo">
+        <img src="IMG/Logo.png" alt="">
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div style="width: 20%;">
+            <img src="IMG/Logo.png" alt="" style="width: 100%;">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home _visao_ADM.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Produtos.html">Produtos</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <br><br><br>
+  <img src="IMG/Icone_User.svg" id="icone_usuario" width="10%">
+  <div class="row">
+    <div class="d-flex justify-content-center"></div>
+    <div class="box_pagina_user row">
+      <div class="col-6">
+        Nome completo&NonBreakingSpace;:<br>
+        E-mail&NonBreakingSpace;:<br>
+        CPF/RG&NonBreakingSpace;:<br>
+        Telefone&NonBreakingSpace;:<br>
+        Cartão&NonBreakingSpace;:<br>
+        Endereço&NonBreakingSpace;:<br>
+        Idioma da conta&NonBreakingSpace;:
+      </div>
+      <div class="col-6">
+        Josias campos de costas e de frente<br>
+        Josiasde_lado@gmail.com<br>
+        000.000.000-00<br>
+        +55 (44) 98283 2383<br>
+        Visa terminado em ** 8782<br>
+        Quadra *** lote ** perto do ****<br>
+        Português
+      </div>
+      <div class="row linha_ADM">
+        <hr>
+        <button type="button" class="btn btn-primary col-6 btn_modal_contato" data-bs-toggle="modal"
+          data-bs-target="#exampleModal2">
+          Entrar em contato
+        </button>
+        <div class="Btn_alterar_userpage_ADM col-6">
+          <button type="button" class="btn btn-primary">Alterar dados</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn btn-danger col btn_modal_strike" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Dar Strike
+        </button>
+        <a class="btn_vermelho_userpage_ADM col">
+          <button type="button" class="btn btn-danger">Bloquear Conta</button>
+        </a>
+        <a class="btn_vermelho_userpage_ADM col">
+          <button type="button" class="btn btn-danger">Banir Conta</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Modal pop-up -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enviar strike ao usuário</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mb-3">
+          <label for="produto-descricao" class="form-label">Descrição</label>
+          Mensagem de strike
+          <textarea class="form-control" id="produto-descricao" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <a href="Home _visao_ADM.html">
+            <button type="button" class="btn btn-primary">Enviar Strike</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Mensagem para o vendedor</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mb-3">
+          <label for="produto-descricao" class="form-label">Descrição</label>
+          Mensagem de strike
+          <textarea class="form-control" id="produto-descricao" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <a href="Home _visao_ADM.html">
+            <button type="button" class="btn btn-primary">Enviar Strike</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

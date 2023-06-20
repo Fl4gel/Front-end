@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfil do usuário</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <div id="Logo">
+        <img src="IMG/Logo.png" alt="">
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div style="width: 20%;">
+            <img src="IMG/Logo.png" alt="" style="width: 100%;">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login_Sign_up.html">Login/Sign Up</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active" href="Perfil_de_usuario.html">Perfil do usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Historico_de_compras.html">Histórico de contas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Vender.html">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+
+  <img src="IMG/Icone_User.svg" id="icone_usuario" width="10%">
+  <div class="row">
+    <div class="d-flex justify-content-center"></div>
+    <div class="box_pagina_user row">
+      <div class="col-6">
+        Nome completo&NonBreakingSpace;:<br>
+        E-mail&NonBreakingSpace;:<br>
+        CPF/RG&NonBreakingSpace;:<br>
+        Telefone&NonBreakingSpace;:<br>
+        Cartão&NonBreakingSpace;:<br>
+        Endereço&NonBreakingSpace;:<br>
+        Idioma da conta&NonBreakingSpace;:
+      </div>
+      <div class="col-6">
+        Josias campos de costas e de frente<br>
+        Josiasde_lado@gmail.com<br>
+        000.000.000-00<br>
+        +55 (44) 98283 2383<br>
+        Visa terminado em ** 8782<br>
+        Quadra *** lote ** perto do ****<br>
+        Português
+      </div>
+      <div class="Btn_alterar_userpage">
+        <button type="button" class="btn btn-primary">Alterar dados</button>
+      </div>
+      <a class="btn_vermelho_userpage">
+        <button type="button" class="btn btn-danger">Deletar Conta</button>
+      </a>
+    </div>
+    
+  </div>
+
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

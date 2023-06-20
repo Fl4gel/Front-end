@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página de Pagamento</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="Pagina_pagamento">
+
+
+   <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+            <div id="Logo">
+        <img src="IMG/Logo.png" alt="">
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div style="width: 20%;">
+            <img src="IMG/Logo.png" alt="" style="width: 100%;">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login_Sign_up.html">Login/Sign Up</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="Perfil_de_usuario.html">Perfil do usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Historico_de_compras.html">Histórico de contas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Vender.html">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h1>Detalhes de Pagamento</h1>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome no Cartão</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Número do Cartão</label>
+            <input type="text" class="form-control" id="cardNumber" required>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="expiryDate" class="form-label">Data de Expiração</label>
+                <input type="text" class="form-control" id="expiryDate" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Endereço de Cobrança</label>
+            <input type="text" class="form-control" id="address" required>
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="city" required>
+          </div>
+          <div class="mb-3">
+            <label for="zipCode" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="zipCode" required>
+          </div>
+          <div class="mb-3">
+            <label for="country" class="form-label">País</label>
+            <input type="text" class="form-control" id="country" required>
+          </div>
+          <button type="submit" class="btn btn_pag btn-primary">Realizar Pagamento</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

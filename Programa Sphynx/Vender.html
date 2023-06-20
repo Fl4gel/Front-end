@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adicionar Produto</title>
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="Pagina_vendas">
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+                <div id="Logo">
+            <img src="IMG/Logo.png" alt="">
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <div style="width: 20%;">
+                <img src="IMG/Logo.png" alt="" style="width: 100%;">
+              </div>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Carrinho.html">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Login_Sign_up.html">Login/Sign Up</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Perfil do usuário</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Historico_de_compras.html">Histórico de contas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Vender.html">Vender</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Home.html">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+<br><br><br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h6 class="title-produto">Informações do Produto</h6>
+        <div class="mb-3">
+          <label for="produto-titulo" class="form-label">Título do Produto</label>
+          <input type="text" class="form-control" id="produto-titulo">
+        </div>
+        <div class="mb-3">
+          <label for="produto-marca" class="form-label">Marca</label>
+          <input type="text" class="form-control" id="produto-marca">
+        </div>
+        <div class="mb-3">
+          <label for="produto-modelo" class="form-label">Modelo</label>
+          <input type="text" class="form-control" id="produto-modelo">
+        </div>
+        <div class="mb-3">
+          <label for="produto-categoria" class="form-label">Categoria</label>
+          <input type="text" class="form-control" id="produto-categoria">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Condição do Produto</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="produto-condicao" id="produto-novo" value="novo">
+            <label class="form-check-label" for="produto-novo">Novo</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="produto-condicao" id="produto-usado" value="usado">
+            <label class="form-check-label" for="produto-usado">Usado</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="produto-preco" class="form-label">Preço</label>
+          <input type="text" class="form-control" id="produto-preco">
+        </div>
+        <div class="mb-3">
+          <label for="produto-contato" class="form-label">Contato</label>
+          <input type="text" class="form-control" id="produto-contato">
+        </div>
+        <div class="mb-3">
+          <label for="produto-descricao" class="form-label">Descrição</label>
+          <textarea class="form-control" id="produto-descricao" rows="5"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h6 class="title-produto">Informações de Envio</h6>
+        <div class="mb-3">
+          <label for="envio-estado" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="envio-estado">
+        </div>
+        <div class="mb-3">
+          <label for="envio-cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="envio-cep">
+        </div>
+        <div class="mb-3">
+          <label for="envio-municipio" class="form-label">Município</label>
+          <input type="text" class="form-control" id="envio-municipio">
+        </div>
+        <div class="mb-3">
+          <label for="envio-pagamento" class="form-label">Métodos de Pagamento Aceitos</label>
+          <input type="text" class="form-control" id="envio-pagamento">
+        </div>
+        <div class="mb-3">
+          <label for="envio-embalagem" class="form-label">Unidades por Embalagem</label>
+          <input type="text" class="form-control" id="envio-embalagem">
+        </div>
+        <div class="mb-3">
+          <label for="envio-comprimento" class="form-label">Comprimento</label>
+          <input type="text" class="form-control" id="envio-comprimento">
+        </div>
+        <div class="mb-3">
+          <label for="envio-largura" class="form-label">Largura</label>
+          <input type="text" class="form-control" id="envio-largura">
+        </div>
+        <div class="mb-3">
+          <label for="envio-espessura" class="form-label">Espessura</label>
+          <input type="text" class="form-control" id="envio-espessura">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Preço Negociável</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="produto-negociavel" id="produto-negociavel-sim" value="sim">
+            <label class="form-check-label" for="produto-negociavel-sim">Sim</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="produto-negociavel" id="produto-negociavel-nao" value="nao">
+            <label class="form-check-label" for="produto-negociavel-nao">Não</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <bubutton type="button" id="botao_final_contato" class="btn btn-dark">Adicionar produto</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

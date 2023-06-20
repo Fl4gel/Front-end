@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página do produto</title>
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+            <div id="Logo">
+        <img src="../IMG/Logo.png" alt="">
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div style="width: 20%;">
+            <img src="../IMG/Logo.png" alt="" style="width: 100%;">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Login_Sign_up.html">Login/Sign Up</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil do usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Historico_de_compras.html">Histórico de contas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Home.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  </div>
+  <div class="row text-center" id="User_page_icone">
+    <img src="../IMG/User.png" alt="">
+  </div>
+
+
+  <!-- Página em si-->
+<br><br><br>
+  <div class="row secao_venda">
+
+    <div class="col-6">
+      <div class="card_img_produto">
+        <img class="" src="../IMG/Imagem_produtos_1.jpg" alt="" width="90%">
+        <div class="outras_img">
+          <img class="" src="../IMG/Imagem_produtos_1.jpg" alt="" width="30%">
+          <img class="" src="../IMG/Imagem_produtos_1.jpg" alt="" width="30%">
+          <img class="" src="../IMG/Imagem_produtos_1.jpg" alt="" width="30%">
+
+        </div>
+      </div>
+    </div>
+    <div class="col info_venda">
+
+      <h5>Notebook Lenovo Gaming</h5>
+
+      <div class="estrelas">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <span> (0)</span>
+      </div>
+
+      <div class="outras_info">
+        <p>Marca: Lenovo</p>
+        <p>Novo</p>
+      </div>
+
+      <div class="valor col">
+        <p>de: <span class="preco-1"> 499,99</span></p>
+        <p>por: <span class="preco-2"> 399,99</span></p>
+      </div>
+
+      <div class="outras_info">
+        <p>Vendido por: Lenovo</p>
+      </div>
+
+      <div class="mb-4 mt-3 col-6">
+        <label for="exampleInputPassword1" class="form-label">Calcule seu CEP:</label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+            aria-describedby="button-addon1">
+          <button class="btn btn-secondary" type="button" id="button-addon1">Usar</button>
+        </div>
+      </div>
+
+      <div>
+        <button class="btn btn-success" type="button" id="button-addon1">Adicionar ao carrinho</button>
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
